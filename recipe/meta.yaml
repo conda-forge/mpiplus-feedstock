@@ -1,5 +1,5 @@
 {% set name = "mpiplus" %}
-{% set version = "v0.0.1" %}
+{% set version = "v0.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/choderalab/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: a3d50157a274decab87589ad78b9e41e9f3d34eb27a7d50cc6e7ef34def98b44 
+  sha256: 5f051210b8cd321fdcbfa97a6e1606b63e6d6c7214c393bc04f93a8545b6d3a8
 
 build:
-  number: 1004
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -47,3 +47,4 @@ extra:
   recipe-maintainers:
     - ijpulidos
     - mikemhenry
+    - jchodera
