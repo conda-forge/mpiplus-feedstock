@@ -152,5 +152,6 @@ Feedstock Maintainers
 =====================
 
 * [@ijpulidos](https://github.com/ijpulidos/)
+* [@jchodera](https://github.com/jchodera/)
 * [@mikemhenry](https://github.com/mikemhenry/)
 
