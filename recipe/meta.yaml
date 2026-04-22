@@ -10,16 +10,16 @@ source:
   sha256: 5f051210b8cd321fdcbfa97a6e1606b63e6d6c7214c393bc04f93a8545b6d3a8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy >=1.11
 
 test:
@@ -27,6 +27,7 @@ test:
     - pytest
     - coverage >=4.4
     - mpi4py
+    - python {{ python_min }}
   imports:
     - mpiplus
 
