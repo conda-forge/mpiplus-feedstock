@@ -1,13 +1,13 @@
 {% set name = "mpiplus" %}
-{% set version = "v0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/choderalab/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 5f051210b8cd321fdcbfa97a6e1606b63e6d6c7214c393bc04f93a8545b6d3a8
+  url: https://github.com/choderalab/{{ name }}/archive/v{{ version }}.tar.gz
+  sha256: f4d064b1d690f00e750c83128d22db4fa7e5d6831b3a33bcc9a60f3314d1ba0c
 
 build:
   number: 0
