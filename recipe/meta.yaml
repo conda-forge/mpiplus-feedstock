@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/choderalab/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: f4d064b1d690f00e750c83128d22db4fa7e5d6831b3a33bcc9a60f3314d1ba0c
+  url: https://pypi.org/packages/source/m/mpiplus/mpiplus-${{ version }}.tar.gz
+  sha256: f453ecb8701aad00f189e08c8542ce559219db946a1534cdcb7242576f73520b
 
 build:
   number: 0
