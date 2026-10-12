@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy >=1.11
 
 test:
@@ -27,6 +27,7 @@ test:
     - pytest
     - coverage >=4.4
     - mpi4py
+    - python {{ python_min }}
   imports:
     - mpiplus
 
