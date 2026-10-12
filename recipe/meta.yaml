@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/m/mpiplus/mpiplus-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/m/mpiplus/mpiplus-{{ version }}.tar.gz
   sha256: f453ecb8701aad00f189e08c8542ce559219db946a1534cdcb7242576f73520b
 
 build:
