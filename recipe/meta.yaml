@@ -1,13 +1,13 @@
 {% set name = "mpiplus" %}
-{% set version = "v0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/choderalab/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 5f051210b8cd321fdcbfa97a6e1606b63e6d6c7214c393bc04f93a8545b6d3a8
+  url: https://pypi.org/packages/source/m/mpiplus/mpiplus-{{ version }}.tar.gz
+  sha256: f453ecb8701aad00f189e08c8542ce559219db946a1534cdcb7242576f73520b
 
 build:
   number: 0
@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy >=1.11
 
 test:
@@ -27,6 +27,7 @@ test:
     - pytest
     - coverage >=4.4
     - mpi4py
+    - python {{ python_min }}
   imports:
     - mpiplus
 
